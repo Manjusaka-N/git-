@@ -22,6 +22,7 @@ export default {
 .test{
     // 本地第一次提交白色
     color: white;
+    font-size:25px;
 }
 
 </style>
