@@ -6,6 +6,10 @@
       <!-- local change second -->
       local change second
     </div>
+    <div>
+    remote change second
+    remote change second
+    </div>
   </div>
 </template>
 
