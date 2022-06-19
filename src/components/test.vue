@@ -20,9 +20,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.test {
-  // 本地第一次提交白色
-  color: white;
-  font-size: 25px;
+
+.test{
+    // 本地第一次提交白色
+    color: white;
+    font-size:25px;
 }
 </style>
