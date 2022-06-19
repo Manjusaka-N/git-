@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="xx">
     <ul>
         <li>
             123456789123
@@ -15,5 +15,7 @@ export default {
 </script>
 
 <style>
-
+.xx{
+height:100px;
+}
 </style>
