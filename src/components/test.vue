@@ -4,6 +4,10 @@
     <div>
     1111
     </div>
+    <div>
+    remote change second
+    remote change second
+    </div>
   </div>
 </template>
 
