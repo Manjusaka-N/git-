@@ -25,5 +25,6 @@ export default {
     // 本地第一次提交白色
     color: white;
     font-size:25px;
+    font-weight: 500;
 }
 </style>
