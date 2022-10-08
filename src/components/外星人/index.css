@@ -1,0 +1,60 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+}
+
+.alien {
+  width: 360px;
+  height: 360px;
+  background-color: #000;
+  transform: rotate(45deg);
+  border-radius: 160px 220px 70px 220px;
+  box-shadow: 10px 10px 50px 1px white;
+  transition: 0.5s;
+}
+
+.alien:hover {
+  box-shadow: 10px 10px 60px 20px white;
+}
+
+.alien::before {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 245px;
+  left: 125px;
+  transform: rotate(45deg);
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  box-shadow: inset 1px 1px 8px 1px black, inset -1px -1px 8px 1px black;
+  transition: 0.5s;
+}
+
+.alien:hover::before {
+  box-shadow: inset 1px 1px 15px 1px black, inset -1px -1px 15px 1px black;
+}
+
+.alien::after {
+  content: "";
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  position: absolute;
+  top: 125px;
+  left: 245px;
+  transform: rotate(-45deg);
+  border-top-left-radius: 200px;
+  border-bottom-right-radius: 200px;
+  box-shadow: inset 1px 1px 8px 1px black, inset -1px -1px 8px 1px black;
+  transition: 0.5s;
+}
+
+.alien:hover::after {
+  box-shadow: inset 1px 1px 15px 1px black, inset -1px -1px 15px 1px black;
+}

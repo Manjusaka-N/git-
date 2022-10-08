@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.text-container {
+  height: 50%;
+}
+
+.text-container .random-text {
+  height: 50vh;
+  width: 100%;
+  font-size: 20px;
+  background-color: transparent;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.button-container .button {
+  position: relative;
+  width: 160px;
+  height: 50px;
+  margin: 0 15px;
+  cursor: pointer;
+}
+
+.button-container .button .shape {
+  fill: none;
+  stroke: #009ffd;
+  stroke-width: 6px;
+  stroke-dasharray: 10 5;
+  stroke-dashoffset: 0;
+  transition: 0.5s ease;
+}
+
+.button-container .button .text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  letter-spacing: 2px;
+}
+
+.button-container .button:hover .shape {
+  stroke-dasharray: 10 0;
+  stroke-dashoffset: 0;
+}

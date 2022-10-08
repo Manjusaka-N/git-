@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  //   background-color: black;
+}
+.container {
+  display: flex;
+  .button {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+    .shape {
+      //取消填充
+      fill: none;
+      //定义一条线
+      stroke: #009ffd;
+      //线的厚度
+      stroke-width: 6px;
+      //设置虚线  长度  间距
+      stroke-dasharray: 10 5;
+      //虚线偏移量
+      stroke-dashoffset: 0;
+      //过度效果
+      transition: 0.5s ease;
+    }
+    .text {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: black;
+      letter-spacing: 2px;
+    }
+    
+  }
+  .button:hover .shape{
+    // stroke: #06e6a0;
+    // stroke-width: 3;
+    stroke-dasharray: 10 0;
+    stroke-dashoffset: 0;
+  }
+}

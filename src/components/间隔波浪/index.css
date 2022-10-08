@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #1b2735;
+  overflow: hidden;
+  position: relative;
+}
+
+.wave {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+}
+
+.wave div {
+  position: relative;
+  width: 20px;
+  height: 200px;
+  margin: 10px;
+  border-radius: 3px;
+  filter: drop-shadow(120px 0 0 rgba(149, 191, 218, 0.5));
+  overflow: hidden;
+}
+
+.wave div::before {
+  content: "";
+  width: 500%;
+  height: 100%;
+  background-color: #95bfda;
+  position: absolute;
+  left: -200%;
+  top: 0%;
+  animation: updown 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate, wave 2s cubic-bezier(0.445, 0.05, 0.55, 0.95) infinite alternate;
+  animation-delay: var(--d1), var(--d2);
+}
+
+@keyframes updown {
+  0% {
+    top: 70%;
+  }
+  100% {
+    top: 30%;
+  }
+}
+
+@keyframes wave {
+  0% {
+    transform: rotateZ(-20deg);
+  }
+  100% {
+    transform: rotateZ(20deg);
+  }
+}
